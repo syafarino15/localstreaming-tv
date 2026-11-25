@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "DLU X ALFATEVE",
+    "slug": "dlu-x-alfateve",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "jsEngine": "hermes",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "id.alfateve.dluxtv",
+      "versionCode": 1,
+      "permissions": [],
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "plugins": [
+      [
+        "@react-native-tvos/config-tv",
+        {
+          "isTV": true,
+          "showVerboseWarnings": false
+        }
+      ],
+      "expo-secure-store",
+      "expo-sqlite",
+      "expo-video",
+      "expo-image",
+      "expo-font",
+      "expo-status-bar"
+    ],
+    "extra": {
+      "apiBaseUrl": "http://192.168.1.10:8080",
+      "nodeCode": "DLU-NODE-01"
+    }
+  }
+}
